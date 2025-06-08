@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Demo", "gRPC-Demo.csproj", "{89AB70CE-C390-4E79-B39A-AD47CE868936}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0DB60D97-D257-4903-9BD5-5BBEE0123631}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A6C91408-0A24-4B7C-AD1F-4F74FCAEC6DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89AB70CE-C390-4E79-B39A-AD47CE868936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AB70CE-C390-4E79-B39A-AD47CE868936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AB70CE-C390-4E79-B39A-AD47CE868936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AB70CE-C390-4E79-B39A-AD47CE868936}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89AB70CE-C390-4E79-B39A-AD47CE868936} = {0DB60D97-D257-4903-9BD5-5BBEE0123631}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55D22829-714C-4599-9C99-DB565FBD1E23}
+	EndGlobalSection
+EndGlobal

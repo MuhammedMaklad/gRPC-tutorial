@@ -1,0 +1,20 @@
+// ===== PROTOBUF CONFIGURATION ===== //
+// Specifies Protocol Buffers syntax version (proto3 is current)
+syntax = "proto3";
+
+// Defines the C# namespace for generated gRPC client/server code
+option csharp_namespace = "gRPC_Demo.Protos";
+
+// Imports message definitions from an external proto file
+import "models.proto";  // Contains TrackingMessage and TrackingResponse definitions
+
+// ===== SERVICE DEFINITION ===== //
+// TrackingService: gRPC service for handling device tracking data
+service TrackingService {
+  // Unary RPC method (single request -> single response)
+  rpc SendMessage(TrackingMessage) returns (TrackingResponse);
+  //  ^           ^                   ^
+  //  |           |                   |
+  // Method name  Input parameter     Return type
+  // (Client calls this) (Defined in models.proto) (Defined in models.proto)
+}
