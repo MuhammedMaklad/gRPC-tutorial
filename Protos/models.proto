@@ -24,6 +24,8 @@ message TrackingMessage {
 
     // Timestamp of the recorded data (uses Google's Timestamp proto) (field tag 4)
     google.protobuf.Timestamp stamp = 4;
+
+    repeated Sensor sensor = 5;
 }
 
 // Location: Geographic coordinates (latitude/longitude)
@@ -39,4 +41,10 @@ message Location {
 message TrackingResponse {
     // Indicates if the operation (e.g., storing tracking data) succeeded (field tag 1)
     bool success = 1;
+}
+
+
+message Sensor {
+    string key = 1;
+    double value = 2;
 }
